@@ -1,0 +1,185 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: blue;
+}
+li{
+	text-decoration: none;
+	list-style-type: "- ";
+	margin: 10px;
+}
+body{
+	font-family: sans-serif ,'Raleway';
+}
+img{
+	border-radius: 10px;
+}
+.page-borders{
+	margin-left: 15%;
+	margin-right: 15%;
+}
+.graficlogo{
+	padding: 5px;
+	max-width: 100%;
+	box-sizing: border-box; /*изменятся будет размер картинки при изменении размера окна*/
+}
+section.header {
+	position:relative; /*приклеиваем внешнюю секцию к верхней границе страницы*/
+	width: 100%;
+	height: 65px;
+	background-color: #87CEFA; /*цвет LightSkyBlue*/
+}
+section.logo { 
+	width:300px; /*задаём ширину лого в пикселях - это определит ширину всей секции с лого*/
+	margin: 0;
+	padding: 0;
+}
+section.head{
+	background-image: url("img/back.jpg");
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.p-head{
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 450%;
+	text-shadow: 1px 1px 2px black; /* смещение-x | смещение-y | радиус-размытия | цвет */
+	text-align: center;
+	padding-top: 7%;
+	color: white;
+}
+.topnav {
+	margin: 15px;
+	position:absolute;
+	top:25%;
+	left:30%;
+	transform:translate(0%,-50%); /*центрируем nav относительно объемлющей секции*/
+}
+.time {
+	margin: 10px;
+	margin-left: 30px;
+	font-size: 25px;
+	color: #3659e1;
+	text-shadow: 1px 0 1px #000, 
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+}
+.topnav a{
+	margin: 20px;
+	margin-right: 90px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #000;
+}
+.topnav a:hover{
+	color: rgb(4, 110, 53);
+	cursor: pointer;
+}
+
+.top-text{
+	text-align: center;
+	font-size: 30px;
+	margin: 20px;
+}
+.main-text{
+	font-weight: bolder;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.text{
+	font-size: 18px;
+}
+
+article{
+	border-radius: 10px;
+	background-color: rgba(135, 206, 250, 0.35); /*3первых значения - цвет, последнее - прозрачность. Чем ближе к 0, тем прозрачнее*/
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.article-header{
+	font-weight: bolder;
+	font-size: 23px;
+}
+.article-date{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.article-text{
+	font-size: 20px;
+}
+.article-sec-text{
+	font-style: italic;
+	font-weight: 200;
+	font-size: 18px;
+}
+article p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+table{
+	border: 1px solid grey;
+	border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+}
+th, td {
+	border: 1px solid grey;
+	padding: 10px 15px;
+}
+td img{
+	width: 115px;
+	height: 115px;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+}
+.container-info{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: left;
+	font-size: 19px;
+
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgba(135, 206, 250, 0.35);
+}
+.container-info p{
+	margin-bottom: 15px;
+}
+.container-info div{
+	margin-left: 20px;
+}
+.container-with-button{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+button{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	border-color: LightSkyBlue;
+	border-radius: 10px;
+	background-color: LightSkyBlue;
+
+	padding: 5px;
+	margin: 10px;
+}
+button:hover{
+	cursor: pointer;
+	background-color: DeepSkyBlue;
+}
+button:active {
+	background-color: DeepSkyBlue;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
